@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="LearnAnIntern" content="Project Management; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Welcome to LearnAnIntern</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style1.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body class="#004d40 teal darken-4">
+
+<!--Navigation bar -->
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+		<li><a href="abstractsub.html">Abstract Submission</a></li>
+		<li><a href="projectsub.html">Project Submission</a></li>
+		<li><a href="viewsub.html">View Submission</a></li>
+		<li><a href="faq.html">FAQ</a></li> &nbsp &nbsp &nbsp
+	    <li> 													<!--ADD SEACH ICON-->
+        <input type="text" placeholder="SEARCH" id="autocomplete-input" class="autocomplete gray-text center-right" > 
+                  </li>      
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+	  <li> 													<!--ADD SEACH ICON-->
+        <input type="text" placeholder="SEARCH" id="autocomplete-input" class="autocomplete gray-text center-right" > 
+                  </li>      
+        <li><a href="homepage.html">Home</a></li>
+		<li><a href="abstractsub.html">Abstract Submission</a></li>
+		<li><a href="projectsub.html">Project Submission</a></li>
+		<li><a href="viewsub.html">View Submission</a></li>
+		<li><a href="aboutus.html">About us</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <!--End navigation bar-->
+
+<!--Code for form-->
+  <br> <br>
+  <div class="container #263238 blue-grey darken-4 white-text z-depth-5" style="padding: 15px" >
+  <div class = "row">
+         <form class = "col s12" action="projectsub.php" method="post" enctype="multipart/form-data">
+            <div class = "row"> 
+			<h4><center><b> <i> Kindly upload the documentation of your final project </b> </i></h4> <br>
+            
+			
+			<div class="rows">
+               <div class = "input-field col s12 m4 ">
+                   <i class = "material-icons prefix">account_circle</i>
+                  <input id = "fname" name="fname" type = "text" class = "active validate white-text " required />
+                  <label for = "fname">Enter full name of student 1</label>
+                </div>
+				
+				 <div class = "input-field col s12 m4 ">
+                   <i class = "material-icons prefix">account_circle</i>
+                  <input id = "sname" name="sname" type = "text" class = "active validate white-text "  />
+                  <label for = "sname">Enter full name of student 2</label>
+                </div>
+				
+				 <div class = "input-field col s12 m4 ">
+                   <i class = "material-icons prefix">account_circle</i>
+                  <input id = "tname" name="tname" type = "text" class = "active validate white-text " />
+                  <label for = "tname">Enter full name of student 3</label>
+                </div>
+			</div>
+               <br>
+			   
+			   <div class="rows">
+               <div class = "input-field col s12 m4">      
+                  <i class = "material-icons prefix">email</i>
+                  <input id = "femail" name="femail" type = "email"
+                     class = "validate white-text ">
+                  <label for = "femail">Somaiya email address of Student 1</label>
+               				  
+               </div>
+			   
+			   <div class = "input-field col s12 m4">      
+                  <i class = "material-icons prefix">email</i>
+                  <input id = "semail" name="semail" type = "email"
+                     class = "validate white-text ">
+                  <label for = "semail">Somaiya email address of Student 2</label>
+               				  
+               </div>
+			   
+			   <div class = "input-field col s12 m4">      
+                  <i class = "material-icons prefix">email</i>
+                  <input id = "temail" name="temail" type = "email"
+                     class = "validate white-text ">
+                  <label for = "temail">Somaiya email address of Student 3</label>
+               				  
+               </div>
+            </div>
+            <br>
+            <div class = "row">
+               <div class = "input-field col s12 m4">
+                  <i class="material-icons prefix">phone</i>
+          <input id="telephone1" name="telephone1" type="tel" class="validate white-text " >
+          <label for="telephone1">Telephone number of Student 1</label>  </div>
+               
+			   <div class = "input-field col s12 m4">
+                  <i class="material-icons prefix">phone</i>
+          <input id="telephone2" name="telephone2" type="tel" class="validate white-text " >
+          <label for="telephone2">Telephone number of Student 2</label>  </div>
+		  <div class = "input-field col s12 m4">
+                  <i class="material-icons prefix">phone</i>
+          <input id="telephone3" name="telephone3" type="tel" class="validate white-text " >
+          <label for="telephone3">Telephone number of Student 3</label>  </div>
+		  </div>
+            
+           
+		   
+			
+            <div class = "row">
+               <div class = "input-field col s12 m8">
+                  <i class = "material-icons prefix">mode_edit</i>
+                 <input id="prob_stmt" name="prob_stmt" type="text" class="validate white-text " data-length="120">
+          <label for="prob_stmt">Enter your problem statement</label>
+               </div>
+			   
+			    <div class = "input-field col s12 m4">
+                 <input id="accyear" name="accyear" type="text" class="validate white-text " data-length="120">
+            <label>Enter your academic year</label>
+			   </div>
+			 
+            </div>
+            
+           
+
+<div class="rows">			
+		<div class="input-field col s12 m4 white-text">
+    <select id="under" name="under">
+      <optgroup label="Departmental">
+        <option value="1">IT</option>
+        <option value="2">CS</option>
+		<option value="3">EXTC</option>
+        <option value="4">ETRX</option>
+      </optgroup>
+      <optgroup label="Committee/Cell">
+        <option value="5">CSI</option>
+        <option value="6">ISTE</option>
+		<option value="7">IEI</option>
+        <option value="8">IETE</option>
+		<option value="9">IEEE</option>
+        <option value="10">IET</option>
+	</optgroup>
+ <optgroup label="Institutional">
+        <option value="11">Institutional</option>
+     	<option value="12">BSH</option>
+     	
+		
+      </optgroup>
+    </select>
+    <label>This project comes under</label>
+  </div>
+  
+  
+  <div class = "input-field col s12 m4 ">
+                   <i class = "material-icons prefix">account_circle</i>
+                  <input id = "facname" name="facname" type = "text" class = "active validate white-text " required />
+                  <label for = "facname">Enter the name of the Faculty</label>
+                </div>
+				
+		<d		
+    <div class="file-field input-field  col s12 m4">
+      <div class="btn">
+        <span>File</span>
+        <input type="file">
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="file" placeholder="Upload the pdf" name="file" id="file">
+      </div>
+    </div>
+  	
+
+  
+  </div>
+  <center> <button class="btn pulse waves-effect waves-light brown" type="submit" name="action">Submit
+    <i class="material-icons right">send</i>
+  </button>          
+                       
+         </form>    <br>    
+  
+        <br> 
+
+		 </div>
+      </div>
+  
+
+  
+  </div>
+  <br> <br>
+  
+  
+  <!--End code for form-->
+  <!--footer-->
+  <!--footer-->
+ <footer class="page-footer #263238 blue-grey darken-4">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h4 class="white-text"><b> <i>KSIEIT-LearnAnIntern</b></i></h4>
+          <p class="grey-text text-lighten-4">K. J. Somaiya Institute of Engineering and Information Technology abbreviated as KJSIEIT was established by the Somaiya Trust in the 2001, at Ayurvihar campus, Sion, Mumbai, India. The institute was set up to impart education in the field of Information Technology and allied branches of Engineering and Technology .</p>
+
+
+        </div>
+        <div class="col l3 s12 right">
+          <h4 class="white-text"><b> <i>Contact us </b> </i></h4>
+          <ul>
+            <li><a class="white-text" href="#!"><b> Contact number: </b> <br>022 2406 1408 </a></li>
+            <li><a class="white-text" href="#!"><b> Address: </b> Somaiya Ayurvihar Complex, Eastern Express Highway, Near Everard Nagar, Sion East, Mumbai, Maharashtra 400022</a></li>
+            
+          </ul>
+        </div>
+        
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">LearnAnIntern Team</a>
+      </div>
+    </div>
+  </footer>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+<script>
+
+  $(document).ready(function(){
+    $('select').formSelect();
+  });
+  
+  
+  
+   $('#abs').val('');
+  M.textareaAutoResize($('#abs'));
+
+  
+   $(document).ready(function() {
+    $('input#prob_stmt, textarea#abs').characterCounter();
+  });
+</script>
+  </body>
+</html>

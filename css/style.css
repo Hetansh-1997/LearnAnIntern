@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css?family=Teko:700");
+body, html {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-image: url("https://modernstainlessladders.files.wordpress.com/2015/06/msl.jpg");
+}
+
+.teko-font-family, .text-item {
+  font-family: 'Teko', sans-serif;
+}
+
+#textAnimated {
+  display: none;
+}
+
+#app {
+  font-size: 15vw;
+  -webkit-animation: elastic 1s ease-in-out infinite;
+          animation: elastic 1s ease-in-out infinite;
+  cursor: default;
+}
+
+.text-item {
+  display: inline-flex;
+  mix-blend-mode: multiply;
+}
+.text-item > div:hover {
+  -webkit-transform: scale(2) !important;
+          transform: scale(2) !important;
+  transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+  transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+}
+
+.red {
+  color: #BD0419;
+}
+
+.yellow {
+  color: #D28910;
+}
+
+.green {
+  color: #018671;
+}
+
+.blue {
+  color: #0689BF;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+@-webkit-keyframes elastic {
+  0%, 100% {
+    letter-spacing: -1.5rem;
+  }
+  50% {
+    letter-spacing: -0.5rem;
+  }
+}
+
+@keyframes elastic {
+  0%, 100% {
+    letter-spacing: -1.5rem;
+  }
+  50% {
+    letter-spacing: -0.5rem;
+  }
+}
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+:focus {
+  outline: none;
+}
+
+
+button {
+  overflow: visible;
+  border: 0;
+  padding: 0;
+  margin: 1.8vw;
+
+}
+.btn.striped-shadow span {
+  display: block;
+  position: relative;
+  z-index: 2;
+  border: 5px solid;
+}
+.btn.striped-shadow.white span {
+  border-color: #ededb8;
+  color: #ededb8;
+  background: black;
+}
+
+
+.btn {
+  font-family: 'Teko', sans-serif;
+  height: 800px;
+  line-height: 65px;
+  display: inline-block;
+  letter-spacing: 1px;
+  position: relative;
+  font-size: 1.9vw;
+  transition: opacity .3s, z-index .3s step-end, -webkit-transform .3s;
+  transition: opacity .3s, z-index .3s step-end, transform .3s;
+  transition: opacity .3s,
+    z-index .3s step-end,
+    transform .3s,
+    -webkit-transform .3s;
+  z-index: 1;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn {
+  width: 355px;
+  height: 58px;
+  line-height: 38px;
+}
+
+button.btn.striped-shadow.white:after, button.btn.striped-shadow.white:before {
+  background-image: linear-gradient(
+    135deg,
+    transparent 0,
+    transparent 5px,
+    #fff 5px,
+    #fff 10px,
+    transparent 10px
+  );
+}
+
+button.btn.striped-shadow.blue:after, button.btn.striped-shadow.blue:before {
+  background-image: linear-gradient(
+    135deg,
+    transparent 0,
+    transparent 5px,
+    #4183D7 5px,
+    #4183D7 10px,
+    transparent 10px
+  );
+}
+
+button.btn.striped-shadow.dark:after, button.btn.striped-shadow.dark:before {
+  background-image: linear-gradient(
+    135deg,
+    transparent 0,
+    transparent 5px,
+    #393939 5px,
+    #393939 10px,
+    transparent 10px
+  );
+}
+
+button.btn.striped-shadow:hover:before {
+  max-height: calc(100% - 10px);
+}
+
+button.btn.striped-shadow:after {
+  width: calc(100% - 4px);
+  height: 8px;
+  left: -10px;
+  bottom: -9px;
+  background-size: 15px 8px;
+  background-repeat: repeat-x;
+}
+button.btn.striped-shadow:after, button.btn.striped-shadow:before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 1;
+  transition: max-height .3s, width .3s, -webkit-transform .3s;
+  transition: transform .3s, max-height .3s, width .3s;
+  transition: transform .3s, max-height .3s, width .3s, -webkit-transform .3s;
+}
+
+.btn.striped-shadow:hover {
+  -webkit-transform: translate(-12px, 12px);
+  -ms-transform: translate(-12px, 12px);
+  transform: translate(-12px, 12px);
+  z-index: 3;
+}
+
+button.btn.striped-shadow:hover:after, button.btn.striped-shadow:hover:before {
+  -webkit-transform: translate(12px, -12px);
+  -ms-transform: translate(12px, -12px);
+  transform: translate(12px, -12px);
+}
+button.btn.striped-shadow:before {
+  width: 8px;
+  max-height: calc(100% - 5px);
+  height: 100%;
+  left: -12px;
+  bottom: -5px;
+  background-size: 8px 15px;
+  background-repeat: repeat-y;
+  background-position: 0 100%;
+}
